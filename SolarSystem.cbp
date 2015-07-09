@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SolarSystem" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SolarSystem" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SolarSystem" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wno-strict-aliasing" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-Winvalid-pch" />
+			<Add option='-include &quot;src\core\stdafx.h&quot;' />
+			<Add option="-Wno-comment" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc" />
+			<Add option="-static-libstdc++" />
+			<Add option="-lopengl32" />
+			<Add option="-lglu32" />
+			<Add library="lib/libglew32.dll.a" />
+			<Add library="lib/glfw3dll.a" />
+			<Add library="lib/libjpeg.dll.a" />
+			<Add library="lib/libturbojpeg.dll.a" />
+			<Add library="lib/libpng.a" />
+			<Add library="lib/libz.dll.a" />
+			<Add directory="lib" />
+		</Linker>
+		<Unit filename="src/billboard.cpp" />
+		<Unit filename="src/billboard.h" />
+		<Unit filename="src/camera_interface.h" />
+		<Unit filename="src/celestial_body_generator.cpp" />
+		<Unit filename="src/celestial_body_generator.h" />
+		<Unit filename="src/core/GLFW/glfw3.h" />
+		<Unit filename="src/core/GLFW/glfw3native.h" />
+		<Unit filename="src/core/GL/glew.h" />
+		<Unit filename="src/core/GL/glxew.h" />
+		<Unit filename="src/core/GL/wglew.h" />
+		<Unit filename="src/core/exception.cpp" />
+		<Unit filename="src/core/exception.h" />
+		<Unit filename="src/core/file_reader.cpp" />
+		<Unit filename="src/core/file_reader.h" />
+		<Unit filename="src/core/glm/gtx/rotate_vector.hpp" />
+		<Unit filename="src/core/glm/vec3.hpp" />
+		<Unit filename="src/core/gltexture.cpp" />
+		<Unit filename="src/core/gltexture.h" />
+		<Unit filename="src/core/jpeg_image.cpp" />
+		<Unit filename="src/core/jpeg_image.h" />
+		<Unit filename="src/core/libjpeg-turbo/jconfig.h" />
+		<Unit filename="src/core/libjpeg-turbo/jerror.h" />
+		<Unit filename="src/core/libjpeg-turbo/jmorecfg.h" />
+		<Unit filename="src/core/libjpeg-turbo/jpeglib.h" />
+		<Unit filename="src/core/libjpeg-turbo/turbojpeg.h" />
+		<Unit filename="src/core/object_callback_interface.h" />
+		<Unit filename="src/core/png/png.h" />
+		<Unit filename="src/core/png_image.cpp" />
+		<Unit filename="src/core/png_image.h" />
+		<Unit filename="src/core/stdafx.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="src/core/window.cpp" />
+		<Unit filename="src/core/window.h" />
+		<Unit filename="src/free_roam_camera.cpp" />
+		<Unit filename="src/free_roam_camera.h" />
+		<Unit filename="src/light.cpp" />
+		<Unit filename="src/light.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/main_form.cpp" />
+		<Unit filename="src/main_form.h" />
+		<Unit filename="src/orthogonal_camera.cpp" />
+		<Unit filename="src/orthogonal_camera.h" />
+		<Unit filename="src/skybox.cpp" />
+		<Unit filename="src/skybox.h" />
+		<Unit filename="src/solar_system_body.cpp" />
+		<Unit filename="src/solar_system_body.h" />
+		<Unit filename="src/tracking_camera.cpp" />
+		<Unit filename="src/tracking_camera.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
